@@ -10,8 +10,10 @@ export default function MaterialPage() {
     return (
         <>
             <NavBar />
-            <h1 className='text-4xl pt-15 ml-2'>Exercises</h1>
-            <p className='text-lg ml-2'>Choose Your Topic: </p>
+            <div className="bg-gray-200">
+                <h1 className='text-4xl pt-15 ml-2'>Exercises</h1>
+                <p className='text-lg ml-2'>Choose Your Topic: </p>
+            </div>
             <div className='flex flex-row'>
                 <MaterialCard title={"Chapter 1: Functions"} descr={"Practice functions"} page={"Ch1Page"} />
                 <MaterialCard title={"Chapter 2: Derivatives"} descr={"Practice deriving functions"} />
@@ -20,16 +22,20 @@ export default function MaterialPage() {
                 <MaterialCard title={"Chapter 5: Integration"} descr={"Practice integration"} />
             </div>
 
-            <div className='flex flex-col bg-gray-200'>
-                <h1 className='text-4xl text-b ml-2'> Resources: </h1>
-                <p className='text-lg ml-2'>Stuck on a topic? Take a look at these resources!</p>
+            <div className='flex flex-col'>
+                <div className="bg-gray-200">
+                    <h1 className='text-4xl text-b ml-2'> Resources: </h1>
+                    <p className='text-lg ml-2'>Stuck on a topic? Take a look at these resources!</p>
+                </div>
                 <div className='flex flex-row'>
                     <Card title={"Khan Academy"} descr={"Khan Academy tutorial for Functions"} link={"https://www.khanacademy.org"} />
                     <Card title={"The Organic Chemistry Tutor"} descr={"Best instructor out there"} link={"https://www.youtube.com/channel/UCEWpbFLzoYGPfuWUMFPSaoA"} />
                     <Card title={"BlackpenRedpen"} descr={"Not sure"} link={"https://www.khanacademy.org"} />
+                    <Card title={"Math.io"} descr={"Math practice or somethihng"} link={"https://www.math.io"} />
                 </div>
             </div>
 
+            <Footer />
         </>
     )
 }
