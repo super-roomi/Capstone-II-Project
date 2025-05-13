@@ -1,1 +1,51 @@
 @import "tailwindcss";
+
+body{
+    background-color: black;
+}
+
+.bg{
+    background-image: url("/Users/karam/Desktop/Projects/MainCapII/Capstone II Project/capstoneTwoProject/pexels-ian-panelo-3729557.jpg");
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: inherit;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.194) ;
+}
+
+.bg-alt{
+    background-image: url("/Users/karam/Desktop/Projects/MainCapII/Capstone II Project/capstoneTwoProject/pexels-little-visuals-1952.jpg");
+    background-size:cover;
+}
+
+
+.bg-pf{
+    background-image: url('/Users/karam/Desktop/Projects/MainCapII/Capstone II Project/capstoneTwoProject/pexels-cottonbro-3826437.jpg');
+    background-size: cover;
+}
+
+.glass {
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(48px);
+    box-shadow: 2px 2px 2px 2px rgba(30,30,30,0.1);
+    z-index: 1;
+}
+
+.quiz-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .choice-button {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .choice-button.correct {
+    background-color: #dcfce7;
+    border-color: #22c55e;
+  }
+  
+  .choice-button.incorrect {
+    background-color: #fee2e2;
+    border-color: #ef4444;
+  }
